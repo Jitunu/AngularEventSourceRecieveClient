@@ -1,0 +1,5 @@
+<mat-nav-list>
+    <mat-list-item *ngFor="let info of weatherInfo$ | async">
+        Station Id: {{info.stationId}}, temperature: {{info.temperature}}C
+    </mat-list-item>
+  </mat-nav-list>
